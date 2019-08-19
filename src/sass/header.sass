@@ -1,0 +1,117 @@
+@import "vars"
+
+.top-header
+	background-color: $accent
+	padding: 15px 0
+
+	&__item_position
+
+		&_left
+			text-align: left
+
+		&_right
+			text-align: right
+
+		&_center
+			text-align: center
+
+	&__social
+	
+		&_line
+		display: flex
+
+		&__item
+			&:not(:last-child)
+				margin-right: 15px
+
+			&_link
+				font-size: 23px
+				display: inline-block
+				color: #42a4ff
+				transition: .3s
+				&:hover
+					color: #fff
+
+	&__welcome-text
+		color: #fff
+		margin: 0
+		font-size: 15px
+
+		&_align_center
+			text-align: center
+						
+	&__btn
+		text-transform: uppercase
+		border-radius: 25px
+		font-weight: bold
+		transition: .3s
+		&:hover
+			background-color: lighten(#42a4ff, 10%)
+
+		&_color_blue
+			background-color: #42a4ff
+			color: #ffffff
+		
+		&_size_m
+			font-size: 14px
+			padding: 10px 40px
+
+.header-middle
+	background-color: $default-color
+	color: #a5d4ff
+	padding: 10px 0
+	
+	&_border_bottom
+		border-bottom: 1px solid #42a4ff
+
+	&__logo
+		display: flex
+
+		&_square
+			margin-right: 65px
+
+		&_img
+			width: 100%
+
+	&__contact-info
+
+		&__icon
+			border-radius: 50%
+			padding: 0
+			background-color: $accent
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 50px
+			height: 50px
+			color: #fff
+
+			&_size_xl
+				font-size: 22px
+		
+		&__text
+			font-size: 15px
+			color: $text-color-reverse
+			padding-left: 10px
+
+.header-bottom
+	background-color: $default-color
+	color: #fff
+	padding: 20px 0
+	&__menu
+		display: flex
+
+		&__item
+			padding: 0 15px
+			&:not(:last-child)
+				margin-right: 20px
+
+			&_link
+				color: #fff
+				font-weight: 500
+				font-size: 18px
+				&:hover
+					color: $text-color-reverse
+
+
+
