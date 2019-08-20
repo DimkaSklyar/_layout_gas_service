@@ -1,0 +1,32 @@
+@import "../_vars.sass"
+
+.feature
+  background-color: #fff
+  padding: 60px 0
+
+  &__item
+    text-align: center
+
+    &_icon
+      font-size: 65px
+      color: #42a4ff
+    
+.content_header
+  font-size: 24px
+  padding: 10px 0
+
+.content_decoration
+  position: relative
+  &:after
+    position: absolute
+    content: ''
+    height: 2px
+    width: 20%
+    background-color: #42a4ff
+    left: 50%
+    bottom: 0
+    transform: translateX(-50%)
+
+.content_paragrah
+  font-size: 14px
+      padding-top: 20px

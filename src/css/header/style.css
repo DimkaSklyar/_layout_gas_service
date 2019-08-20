@@ -1,0 +1,138 @@
+.top-header {
+  background-color: #084884;
+  padding: 15px 0;
+}
+
+.top-header__item_position_left {
+  text-align: left;
+}
+
+.top-header__item_position_right {
+  text-align: right;
+}
+
+.top-header__item_position_center {
+  text-align: center;
+}
+
+.top-header__social {
+  display: flex;
+}
+
+.top-header__social__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.top-header__social__item_link {
+  font-size: 23px;
+  display: inline-block;
+  color: #42a4ff;
+  transition: .3s;
+}
+
+.top-header__social__item_link:hover {
+  color: #fff;
+}
+
+.top-header__welcome-text {
+  color: #fff;
+  margin: 0;
+  font-size: 15px;
+}
+
+.top-header__welcome-text_align_center {
+  text-align: center;
+}
+
+.top-header__btn {
+  text-transform: uppercase;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.top-header__btn:hover {
+  background-color: #75bdff;
+}
+
+.top-header__btn_color_blue {
+  background-color: #42a4ff;
+  color: #ffffff;
+}
+
+.top-header__btn_size_m {
+  font-size: 14px;
+  padding: 10px 40px;
+}
+
+.header-middle {
+  background-color: #1872c5;
+  color: #a5d4ff;
+  padding: 10px 0;
+}
+
+.header-middle_border_bottom {
+  border-bottom: 1px solid #42a4ff;
+}
+
+.header-middle__logo {
+  display: flex;
+}
+
+.header-middle__logo_square {
+  margin-right: 65px;
+}
+
+.header-middle__logo_img {
+  width: 100%;
+}
+
+.header-middle__contact-info__icon {
+  border-radius: 50%;
+  padding: 0;
+  background-color: #084884;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+
+.header-middle__contact-info__icon_size_xl {
+  font-size: 22px;
+}
+
+.header-middle__contact-info__text {
+  font-size: 15px;
+  color: #a5d4ff;
+  padding-left: 10px;
+}
+
+.header-bottom {
+  background-color: #1872c5;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.header-bottom__menu {
+  display: flex;
+}
+
+.header-bottom__menu__item {
+  padding: 0 15px;
+}
+
+.header-bottom__menu__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header-bottom__menu__item_link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.header-bottom__menu__item_link:hover {
+  color: #a5d4ff;
+}
