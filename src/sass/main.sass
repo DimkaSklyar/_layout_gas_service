@@ -1,11 +1,7 @@
 @import "fonts"
 @import "main.scss"
 @import "libs"
-@import "header/header"
-@import "slider/slider"
-@import "feature/feature"
-@import "slogan/slogan"
-@import "products/products"
+
 /*==========  user style  ==========*/
 body
 	font-family: 'Rubik', sans-serif
@@ -64,7 +60,8 @@ ul
 		padding: 15px 50px
 		border-radius: 30px
 		letter-spacing: .5px
-
+.btn-wrap
+	text-align: center
 .m-b-0
 	margin-bottom: 0
 
@@ -130,6 +127,48 @@ ul
 		transform: translate(-50%, -50%)
 .slick-disabled
 	background-color: lighten(#42a4ff,10%)
+
+.section-header
+	text-align: center
+	font-size: 60px
+	font-weight: 500
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		bottom: 0
+		height: 2px
+		width: 40px
+		background-color: #fff
+		left: 50%
+		transform: translateX(-50%)
+.section-description
+	text-align: center
+	margin-top: 15px
+table
+	td
+		padding: 15px
+	thead
+		background-color: #136cbf
+		color: #fff
+	tbody
+		tr:nth-child(even)
+			background-color: lighten(#42a4ff,20%)
+		tr:nth-child(odd)
+			background-color: lighten(#42a4ff,35%)
+		td:not(:first-child)
+			text-align: center
+	
+		
 /*==========  user style  ==========*/
+@import "header/header"
+@import "slider/slider"
+@import "feature/feature"
+@import "slogan/slogan"
+@import "products/products"
+@import "brand/brand"
+@import "price/price"
+@import "footer/footer"
+
 
 @import "media" // Always at the end

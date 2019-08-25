@@ -1,0 +1,20 @@
+.price {
+  padding: 60px 0 80px;
+}
+
+.price_header:before {
+  background-color: #000;
+}
+
+.table {
+  margin: 10px 0 40px;
+}
+
+.table__header_col:first-child {
+  width: 50%;
+}
+
+.table__header_col:not(:first-child) {
+  width: calc(50% / 3);
+  text-align: center;
+}
