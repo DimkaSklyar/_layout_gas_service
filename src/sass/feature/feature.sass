@@ -6,14 +6,26 @@
 
   &__item
     text-align: center
+    +media-breakpoint-down(md)
+      margin-bottom: 20px
+
+    &_content
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      min-height: 235px
+      +media-breakpoint-down(md)
+        min-height: 210px
 
     &_icon
       font-size: 65px
       color: #42a4ff
-    
+
 .content_header
   font-size: 24px
   padding: 10px 0
+  +media-breakpoint-down(lg)
+    font-size: 20px
 
 .content_decoration
   position: relative
@@ -29,4 +41,6 @@
 
 .content_paragrah
   font-size: 14px
-      padding-top: 20px
+  padding-top: 20px
+
+@import "../_media.sass"

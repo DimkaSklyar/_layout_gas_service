@@ -4,11 +4,18 @@
   background-color: #313132
   padding: 60px 0 40px
 
+  &__logo
+    text-align: center
+
   &__logo_img
     width: 100%
+    +media-breakpoint-down(md)
+      width: 70%
 
   &__social
     padding-top: 30px
+    +media-breakpoint-down(md)
+      margin-bottom: 30px
     a
       color: #777777
   
@@ -25,10 +32,14 @@
       padding-left: 25px
       color: #777777
       font-weight: 300
+      +media-breakpoint-down(md)
+        display: block
 
     
   &__section
     padding-left: 30px
+    +media-breakpoint-down(md)
+      padding-left: 0
     
     &__header
       color: #fff

@@ -9,6 +9,7 @@ body
 
 a
 	transition: .3s
+	display: inline-block
 	&:link
 		outline: none 0
 	&:visited
@@ -61,6 +62,10 @@ ul
 	&_size_m
 		font-size: 14px
 		padding: 10px 40px
+		+media-breakpoint-down(lg)
+			padding: 10px 30px
+		+media-breakpoint-down(md)
+			padding: 10px 30px
 	
 	&_size_l
 		font-size: 16px
@@ -208,6 +213,30 @@ table
 .mfp-close-btn-in .mfp-close
 	color: #fff
 
+.m-l-minus-30-md
+
+
+.reset-padding-media-breakpoint
+	+media-breakpoint-down(lg)
+		padding: 0 !important
+	+media-breakpoint-down(md)
+		margin-left: -30px
+	+media-breakpoint-down(sm)
+		margin-left: 0
+
+
+.container-castom-fluid-breakpoint
+	+media-breakpoint-down(md)
+		width: 100%
+.res
+	margin-left: 0
+
+.res-2
+	padding-left: 15px !important
+	padding-right: 15px !important
+	+media-breakpoint-down(sm)
+		padding-left: 15px !important
+		padding-right: 15px !important
 /*==========  user style  ==========*/
 @import "header/header"
 @import "slider/slider"

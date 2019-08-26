@@ -16,7 +16,10 @@
 			text-align: center
 
 	&__social
-	
+		+media-breakpoint-down(sm)
+			margin-bottom: 10px
+		
+
 		&_line
 		display: flex
 
@@ -36,6 +39,9 @@
 		color: #fff
 		margin: 0
 		font-size: 15px
+		+media-breakpoint-down(sm)
+			margin-bottom: 10px
+
 
 		&_align_center
 			text-align: center
@@ -52,7 +58,7 @@
 			color: #fff
 		&:link
 			color: #fff
-		
+
 		&_color_blue
 			background-color: #42a4ff
 			color: #ffffff
@@ -60,6 +66,8 @@
 		&_size_m
 			font-size: 14px
 			padding: 10px 40px
+			+media-breakpoint-down(md)
+				padding: 10px 18px
 
 .header-middle
 	background-color: $default-color
@@ -71,12 +79,23 @@
 
 	&__logo
 		display: flex
+		+media-breakpoint-down(sm)
+			justify-content: center
+		a
+			text-align: center
 
 		&_square
 			margin-right: 65px
+			+media-breakpoint-down(md)
+				margin-right: 45px
+			+media-breakpoint-down(sm)
+				margin: 0
+				margin-bottom: 15px
 
 		&_img
 			width: 100%
+			+media-breakpoint-down(sm)
+				width: 50%
 
 	&__contact-info
 
@@ -102,6 +121,8 @@
 			font-size: 15px
 			color: $text-color-reverse
 			padding-left: 10px
+			+media-breakpoint-down(md)
+				font-size: 13px
 			a
 				color: $text-color-reverse
 				transition: .3s
@@ -119,6 +140,8 @@
 			padding: 0 15px
 			&:not(:last-child)
 				margin-right: 20px
+				+media-breakpoint-down(md)
+					margin-right: 5px
 
 			&_link
 				color: #fff
@@ -126,6 +149,11 @@
 				font-size: 18px
 				&:hover
 					color: $text-color-reverse
+
+.t-a-sm-center
+	+media-breakpoint-down(sm)
+		text-align: center
+@import "media"
 
 
 
