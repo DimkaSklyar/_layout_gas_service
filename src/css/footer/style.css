@@ -1,3 +1,102 @@
 .page-footer {
   background-color: #313132;
+  padding: 60px 0 40px;
+}
+
+.page-footer__logo_img {
+  width: 100%;
+}
+
+.page-footer__social {
+  padding-top: 30px;
+}
+
+.page-footer__social a {
+  color: #777777;
+}
+
+.page-footer__contact-info {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.page-footer__contact-info:before {
+  font-family: "FontAwesome";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+}
+
+.page-footer__contact-info p, .page-footer__contact-info a {
+  padding-left: 25px;
+  color: #777777;
+  font-weight: 300;
+}
+
+.page-footer__section {
+  padding-left: 30px;
+}
+
+.page-footer__section__header {
+  color: #fff;
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.page-footer__section__header:before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.page-footer__section__description {
+  color: #777777;
+  font-weight: 300;
+  line-height: 1.3;
+  padding-bottom: 5px;
+}
+
+.page-footer input {
+  width: 100%;
+  border-radius: 25px;
+  outline: none 0;
+  border: none;
+  padding: 8px 19px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.contact-info-1:before {
+  content: '\f095';
+}
+
+.contact-info-2:before {
+  content: '\f041';
+}
+
+.contact-info-3:before {
+  content: '\f003';
+}
+
+.contact-info-4:before {
+  content: '\f017';
+}
+
+.copyright {
+  background: #2d2d2d;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+  font-weight: 300;
+  color: #777777;
 }

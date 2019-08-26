@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 	<link rel="stylesheet" href="css/style.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 	<title>ДК ГазСервис</title>
 </head>
 
@@ -61,7 +62,7 @@
 							<div class="container-fluid">
 								<div class="row no-gutters align-items-center">
 									<div class="col-3">
-										<a href="#">
+										<a class="popup-gmaps" href="https://yandex.ru/map-widget/v1/?um=constructor%3Aacb9cbe928ad23e029699c2944e1dfe1accd0e7b9b298e5686d299a649fea0f1&amp;source=constructor">
 											<div class="header-middle__contact-info__icon header-middle__contact-info__icon_size_xl">
 												<i class="fa fa-map-marker" aria-hidden="true"></i>
 											</div>
@@ -136,6 +137,9 @@
 						</li>
 						<li class="header-bottom__menu__item">
 							<a href="#" class="header-bottom__menu__item_link">Бренды</a>
+						</li>
+						<li class="header-bottom__menu__item">
+							<a href="#" class="header-bottom__menu__item_link">Прайс-лист</a>
 						</li>
 						<li class="header-bottom__menu__item">
 							<a href="#" class="header-bottom__menu__item_link">Контакты</a>
@@ -422,34 +426,96 @@
 	</section>
 
 	<section class="map">
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aacb9cbe928ad23e029699c2944e1dfe1accd0e7b9b298e5686d299a649fea0f1&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+		<script type="text/javascript" charset="utf-8" async
+			src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aacb9cbe928ad23e029699c2944e1dfe1accd0e7b9b298e5686d299a649fea0f1&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
 	</section>
 
 	<footer class="page-footer">
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+		<div class="container">
+			<div class="row">
+				<div class="col-2">
+					<div class="page-footer__logo">
+						<a href="index.html">
+							<img src="img/logo.png" alt="" class="page-footer__logo_img">
+						</a>
+					</div>
+					<div class="page-footer__social">
+						<div class="social">
+							<ul class="top-header__social top-header__social_line justify-content-center">
+								<li class="top-header__social__item">
+									<a href="#" class="top-header__social__item_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+								</li>
+								<li class="top-header__social__item">
+									<a href="#" class="top-header__social__item_link"><i class="fa fa-instagram"
+											aria-hidden="true"></i></a>
+								</li>
+								<li class="top-header__social__item">
+									<a href="#" class="top-header__social__item_link"><i class="fa fa-facebook"
+											aria-hidden="true"></i></a>
+								</li>
+								<li class="top-header__social__item">
+									<a href="#" class="top-header__social__item_link"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-5">
+					<div class="page-footer__section">
+						<h2 class="page-footer__section__header">Новостная рассылка</h2>
+						<p class="page-footer__section__description">
+							Будьте в курсе последних новостей, специальных предложений и другой информации о скидках. Введите свой
+							адрес электронной почты и подпишитесь на нашу рассылку.
+						</p>
+						<form action="" method="post">
+							<input type="email" placeholder="E-mail*">
+						</form>
+						<div class="btn-wrap t-a-r">
+							<a href="#"
+								class="button button-default button__theme_darken button_color_blue button_size_m">Подписаться</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-5">
+					<div class="page-footer__section">
+						<h2 class="page-footer__section__header">Контакты</h2>
+						<ul class="row">
+							<li class="col-6">
+								<div class="page-footer__contact-info contact-info-1">
+									<p class="m-b-0">+7 (999) 444-44-44</p>
+									<p class="m-b-0">+7 (999) 444-44-44</p>
+								</div>
+							</li>
+							<li class="col-6">
+								<div class="page-footer__contact-info contact-info-2">
+									<p class="m-b-0">г. Краснодар, ул. Заполярная, дом. 423</p>
+								</div>
+							</li>
+							<li class="col-6">
+								<div class="page-footer__contact-info contact-info-3">
+									<a href="mailto:example@example.ru">example@example.ru</a>
+								</div>
+							</li>
+							<li class="col-6">
+								<div class="page-footer__contact-info contact-info-4">
+									<p class="m-b-0">пн-пт: 9:00 - 19:00</p>
+									<p class="m-b-0">сб-вс: 9:00 - 17:00</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer>
 
+
+	<div class="copyright">
+		<p>© 2019 DKGaz23.ru | Разработано DSklr </p>
+	</div>
 	<script src="js/scripts.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 </body>
 
 </html>
