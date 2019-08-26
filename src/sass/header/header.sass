@@ -47,7 +47,12 @@
 		transition: .3s
 		&:hover
 			background-color: lighten(#42a4ff, 10%)
-
+			color: #fff
+		&:visited
+			color: #fff
+		&:link
+			color: #fff
+		
 		&_color_blue
 			background-color: #42a4ff
 			color: #ffffff
@@ -97,6 +102,11 @@
 			font-size: 15px
 			color: $text-color-reverse
 			padding-left: 10px
+			a
+				color: $text-color-reverse
+				transition: .3s
+				&:hover
+					color: #fff
 
 .header-bottom
 	background-color: $default-color

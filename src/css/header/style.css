@@ -53,6 +53,15 @@
 
 .top-header__btn:hover {
   background-color: #75bdff;
+  color: #fff;
+}
+
+.top-header__btn:visited {
+  color: #fff;
+}
+
+.top-header__btn:link {
+  color: #fff;
 }
 
 .top-header__btn_color_blue {
@@ -113,6 +122,15 @@
   font-size: 15px;
   color: #a5d4ff;
   padding-left: 10px;
+}
+
+.header-middle__contact-info__text a {
+  color: #a5d4ff;
+  transition: .3s;
+}
+
+.header-middle__contact-info__text a:hover {
+  color: #fff;
 }
 
 .header-bottom {

@@ -25,6 +25,11 @@
 
 .brand__carousel__item_img {
   width: 100%;
+  transition: .3s;
+}
+
+.brand__carousel__item_img:hover {
+  transform: scale(1.1);
 }
 
 .brand .slick-track {

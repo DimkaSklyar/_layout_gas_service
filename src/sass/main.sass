@@ -1,6 +1,7 @@
 @import "fonts"
 @import "main.scss"
 @import "libs"
+@import "vars"
 
 /*==========  user style  ==========*/
 body
@@ -32,11 +33,17 @@ ul
 	border-radius: 25px
 	font-weight: bold
 	transition: .3s
+	&:hover
+		color: #fff
 
 	&_color_blue
 		background-color: #42a4ff
 		color: #ffffff
 		box-shadow: 0px 2px 10px 0px rgba(19,108,191,0.31)
+		&:link
+			color: #fff
+		&:visited
+			color: #fff
 
 	&_transparent
 		border: 2px solid #42a4ff
@@ -161,7 +168,46 @@ table
 
 .t-a-r
 	text-align: right
-		
+
+.t-a-c
+	text-align: center
+
+.t-a-l
+	text-align: left
+
+#small-dialog
+	background: $accent
+	max-height: 600px
+	height: calc(100vh - 200px)
+	min-height: 450px
+	width: 600px
+	min-width: 600px
+	padding: 80px 40px
+	.mfp-close-btn-in
+		.mfp-close
+			color: #fff
+
+.modal
+	color: #fff
+	text-align: center
+	h1
+		text-align: center
+		font-size: 45px
+
+	&__form
+
+		&__input
+			width: 100%
+			padding: 13px 15px
+			font-size: 14px
+			line-height: 22px
+			border: 1px solid
+			border-radius: 35px
+			margin-bottom: 10px
+
+.mfp-close-btn-in .mfp-close
+	color: #fff
+
 /*==========  user style  ==========*/
 @import "header/header"
 @import "slider/slider"
