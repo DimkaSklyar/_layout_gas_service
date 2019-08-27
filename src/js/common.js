@@ -31,10 +31,12 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 767,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false
         }
       }
       // You can unslick at a given breakpoint now by adding:
@@ -63,7 +65,7 @@ $(document).ready(function () {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 2
         }
       },
@@ -105,5 +107,12 @@ $(document).ready(function () {
 		removalDelay: 300,
 		mainClass: 'my-mfp-slide-bottom'
 	});
+
+  $(".mobile-menu__icon_button").click(function (e) { 
+    e.preventDefault();
+    $(".header-bottom__menu").fadeToggle("slow", "linear" );
+  });
+
+
 
 });

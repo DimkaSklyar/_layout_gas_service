@@ -247,5 +247,19 @@ table
 @import "price/price"
 @import "footer/footer"
 
+.display-none
+	+media-breakpoint-down(sm)
+		display: none
+
+.mobile-menu
+
+	&__icon
+
+		&_button
+			background-color: transparent
+			border: none
+			outline: none 0
+			color: #fff
+			font-size: 24px
 
 @import "media" // Always at the end

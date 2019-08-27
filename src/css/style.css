@@ -8246,6 +8246,12 @@ table tbody td:not(:first-child) {
   }
 }
 
+@media (max-width: 767px) {
+  .header-middle__contact-info {
+    margin-bottom: 10px;
+  }
+}
+
 .header-middle__contact-info__icon {
   border-radius: 50%;
   padding: 0;
@@ -8280,9 +8286,16 @@ table tbody td:not(:first-child) {
   }
 }
 
+@media (max-width: 767px) {
+  .header-middle__contact-info__text {
+    font-size: 15px;
+  }
+}
+
 .header-middle__contact-info__text a {
   color: #a5d4ff;
   transition: .3s;
+  display: block;
 }
 
 .header-middle__contact-info__text a:hover {
@@ -8295,12 +8308,24 @@ table tbody td:not(:first-child) {
   padding: 20px 0;
 }
 
+@media (max-width: 767px) {
+  .header-bottom {
+    padding: 10px 0;
+  }
+}
+
 .header-bottom__menu {
   display: flex;
 }
 
 .header-bottom__menu__item {
   padding: 0 15px;
+}
+
+@media (max-width: 767px) {
+  .header-bottom__menu__item {
+    margin-top: 10px;
+  }
 }
 
 .header-bottom__menu__item:not(:last-child) {
@@ -8343,6 +8368,12 @@ table tbody td:not(:first-child) {
   background-size: cover;
 }
 
+@media (max-width: 767px) {
+  .slider__item_background {
+    background-position: 55% 50%;
+  }
+}
+
 .content__header {
   font-style: italic;
   font-size: 60px;
@@ -8350,11 +8381,23 @@ table tbody td:not(:first-child) {
   line-height: 1.1;
 }
 
+@media (max-width: 767px) {
+  .content__header {
+    font-size: 45px;
+  }
+}
+
 .content__paragrah {
   color: #777777;
   font-style: italic;
   font-weight: 300;
   font-size: 24px;
+}
+
+@media (max-width: 767px) {
+  .content__paragrah {
+    font-size: 20px;
+  }
 }
 
 .feature {
@@ -8421,8 +8464,6 @@ table tbody td:not(:first-child) {
   padding-top: 20px;
 }
 
-/*==========  Desktop First  ==========*/
-/*==========  Mobile First  ==========*/
 .slogan {
   padding: 60px 0;
 }
@@ -8447,6 +8488,12 @@ table tbody td:not(:first-child) {
 
 .products {
   padding: 80px 0;
+}
+
+.products .slick-dots {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5%;
 }
 
 .carousel__item__product {
@@ -8671,6 +8718,20 @@ table tbody td:not(:first-child) {
   margin: 0;
   font-weight: 300;
   color: #777777;
+}
+
+@media (max-width: 767px) {
+  .display-none {
+    display: none;
+  }
+}
+
+.mobile-menu__icon_button {
+  background-color: transparent;
+  border: none;
+  outline: none 0;
+  color: #fff;
+  font-size: 24px;
 }
 
 /*==========  Desktop First  ==========*/
