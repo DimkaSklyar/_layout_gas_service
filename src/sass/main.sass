@@ -6,6 +6,8 @@
 /*==========  user style  ==========*/
 body
 	font-family: 'Rubik', sans-serif
+	min-width: 375px
+	scroll-behavior: smooth
 
 a
 	transition: .3s
@@ -72,6 +74,9 @@ ul
 		padding: 15px 50px
 		border-radius: 30px
 		letter-spacing: .5px
+		+media-breakpoint-down(xs)
+			font-size: 14px
+			padding: 15px 20px
 .btn-wrap
 	text-align: center
 .m-b-0
@@ -157,9 +162,17 @@ ul
 .section-description
 	text-align: center
 	margin-top: 15px
+.table-wrapper
+	overflow: auto
+	font-size: 13px
+	display: flex
+	padding-left: 5px
+	padding-right: 5px
 table
 	td
 		padding: 15px
+		+media-breakpoint-down(xs)
+			padding: 6px
 	thead
 		background-color: #136cbf
 		color: #fff
@@ -170,6 +183,8 @@ table
 			background-color: lighten(#42a4ff,35%)
 		td:not(:first-child)
 			text-align: center
+			+media-breakpoint-down(xs)
+				white-space: nowrap
 
 .t-a-r
 	text-align: right
@@ -188,6 +203,11 @@ table
 	width: 600px
 	min-width: 600px
 	padding: 80px 40px
+	+media-breakpoint-down(sm)
+		max-width: calc(100vw - 50px)
+		min-width: calc(100vw - 50px)
+		min-height: 450px
+		max-height: 450px
 	.mfp-close-btn-in
 		.mfp-close
 			color: #fff
@@ -198,6 +218,8 @@ table
 	h1
 		text-align: center
 		font-size: 45px
+		+media-breakpoint-down(sm)
+			font-size: 26px
 
 	&__form
 
@@ -209,6 +231,9 @@ table
 			border: 1px solid
 			border-radius: 35px
 			margin-bottom: 10px
+			+media-breakpoint-down(sm)
+				padding: 11px 12px
+
 
 .mfp-close-btn-in .mfp-close
 	color: #fff
@@ -246,7 +271,9 @@ table
 @import "brand/brand"
 @import "price/price"
 @import "footer/footer"
-
+@import "other-page/about-us"
+@import "other-page/contacts"
+@import "other-page/service"
 .display-none
 	+media-breakpoint-down(sm)
 		display: none

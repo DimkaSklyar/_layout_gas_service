@@ -3,6 +3,10 @@
 .slider
   min-height: 628px
   height: 628px
+  +media-breakpoint-down(xs)
+    height: 500px
+    min-height: 500px
+
 
   &__item
 
@@ -13,6 +17,8 @@
       background-size: cover
       +media-breakpoint-down(sm)
         background-position: 55% 50%
+      +media-breakpoint-down(xs)
+        height: 500px
 
   
 .content__header
@@ -22,6 +28,8 @@
   line-height: 1.1
   +media-breakpoint-down(sm)
     font-size: 45px
+  +media-breakpoint-down(xs)
+    font-size: 30px
 
 .content__paragrah
   color: #777777
@@ -30,3 +38,5 @@
   font-size: 24px
   +media-breakpoint-down(sm)
     font-size: 20px
+  +media-breakpoint-down(xs)
+    font-size: 14px

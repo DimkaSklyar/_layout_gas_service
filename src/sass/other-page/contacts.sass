@@ -1,0 +1,60 @@
+@import "../vars"
+
+.get-in-touch
+  +media-breakpoint-down(md)
+    margin-bottom: 30px
+  &__form__input
+    padding: 13px 15px
+    font-size: 14px
+    line-height: 22px
+    border: 1px solid
+    border-radius: 35px
+    width: 100%
+    color: #313132
+    background-color: #f5f6f6
+    font-style: normal
+    font-weight: 400
+    border-color: #d9dddd
+    margin-bottom: 10px
+  
+  label
+    color: #919191
+    font-weight: 300
+
+.contacts-page
+
+  &_other
+    display: flex
+    align-items: baseline
+    font-size: 14px
+    .fa
+      color: #1872c5
+      font-size: 20px
+      margin-right: 5px
+      padding-top: 5px
+  &__item
+    padding-bottom: 40px
+
+    &__link
+      color: #000
+  &__header
+    color: #313132
+    font-size: 24px
+    border-bottom: 1px solid #313132
+    margin-bottom: 30px
+
+  &__social__item
+    background: #1872c5
+    width: 50px
+    height: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    color: #fff
+    transition: .3s
+    &:hover
+      background-color: #313132
+    
+
+

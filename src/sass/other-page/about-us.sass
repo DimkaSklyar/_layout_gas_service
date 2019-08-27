@@ -1,0 +1,45 @@
+@import "../vars"
+
+.header-page
+  padding: 60px 0
+  background-color: #f9f9f9
+  +media-breakpoint-down(md)
+    padding: 30px 0
+  h1
+    color: #313132
+    font-size: 60px
+    font-weight: 700
+    +media-breakpoint-down(md)
+      font-size: 50px
+
+.other-page-section
+  padding: 100px 0 80px
+  +media-breakpoint-down(md)
+    padding: 80px 0 60px
+
+.about-us
+
+  &__btn
+    margin-top: 30px
+
+  &__header
+    h2
+      font-size: 40px
+      position: relative
+      line-height: 1
+      padding-bottom: 20px
+      margin-bottom: 30px
+      +media-breakpoint-down(md)
+        font-size: 30px
+      &:before
+        position: absolute
+        content: ''
+        height: 2px
+        width: 40px
+        background-color: #42a4ff
+        left: 0
+        bottom: 0
+
+  &__img
+    img
+      width: 100%
